@@ -1,0 +1,44 @@
+
+
+.replya-to-review {
+    width: 100%;
+    padding: 12px;
+    background: #ECF3FB;
+    border-radius: 5px;
+	&__header {
+        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 13px;
+     }
+    &__date{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #828282;
+        margin-left: auto;
+        margin-right: 17px;
+    }
+	&__title { 
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        color: #2A6071;
+
+    }
+	&__icon { 
+        margin-right: 4px;
+        margin-top: auto;
+    }
+	&__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #2A6071;
+     }
+}

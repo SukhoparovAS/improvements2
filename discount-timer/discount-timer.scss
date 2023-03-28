@@ -1,0 +1,42 @@
+body{
+    font-family: 'Montserrat';
+}
+.discount-timer-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.discount-msg{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: rgba(129, 201, 38, 0.2);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #759417;
+    line-height: 18px;
+    &__highlighted{
+        display: inline;
+        font-weight: 600;
+    }
+   &__icon{
+    margin-right: 10px;
+    min-height: 24px;
+    min-width: 24px;
+   }
+}
+.timer {
+    display: flex;
+    align-items: center;
+
+	&__icon {
+        margin-right: 6px;
+     }
+	&__time {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: #828282;
+     }
+}

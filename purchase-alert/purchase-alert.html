@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="purchase-alert.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="" class="purchase-alert">
+        <button type="button" class="purchase-alert__close-btn">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 8.32753L12.6725 14L14 12.6725L8.32752 7L14 1.32752L12.6725 0L7 5.67248L1.32752 0L0 1.32753L5.67247 7L0 12.6725L1.32752 14L7 8.32753Z" fill="#010101"/>
+            </svg>
+        </button>
+        <img class="purchase-alert__product-img" src="image133.png" alt="">
+        <div class="purchase-alert__content">
+            <div class="purchase-alert__title">Alguien acaba de comprar</div>
+            <div class="purchase-alert__product">Netflix Premium 1 añoNetflix Premium 1 año</div>
+            <div class="purchase-alert__time-and-country">hace 1 minuto (Alemania)</div>
+        </div>     
+    </a>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+        let purchaseAlert = $('.purchase-alert')
+        let purchaseAlertCloseBtn = $('.purchase-alert__close-btn')
+        function openPurchaseAlert(){
+            purchaseAlert.addClass('purchase-alert_show')
+        }
+        function closePurchaseAlert(){
+            purchaseAlert.removeClass('purchase-alert_show')
+        }
+        purchaseAlertCloseBtn.click((event)=>{
+            event.stopPropagation();
+            event.preventDefault();
+            closePurchaseAlert()
+        })
+        ////////////// для разработки //////////
+        setInterval(()=>{
+            openPurchaseAlert()
+        }, 1000
+        )
+    </script>
+</body>
+</html>

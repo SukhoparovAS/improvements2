@@ -1,0 +1,34 @@
+.trustpilot-btn {
+    display: flex;
+    align-items: center;
+    background: #2B2E35;
+    border-radius: 5px;
+    width: 357px;
+    height: 44px;
+    padding: 5px 19px;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+	&__img { 
+        margin-right: 22px;
+    }
+	&__text { 
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+        &::before{
+            content: '';
+            display: block;
+            width: 2px;
+            height: 19px;
+            background-color: #676767;
+            margin-right: 63px;
+        }
+    }
+    &:hover{
+        background: #383E4E;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="discount-timer.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="discount-timer-container">
+        <div class="discount-msg">
+            <svg class="discount-msg__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.9687 10H3.96875V18C3.96875 21 4.96875 22 7.96875 22H15.9688C18.9688 22 19.9687 21 19.9687 18V10Z" stroke="#759417" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.5 7V8C21.5 9.1 20.97 10 19.5 10H4.5C2.97 10 2.5 9.1 2.5 8V7C2.5 5.9 2.97 5 4.5 5H19.5C20.97 5 21.5 5.9 21.5 7Z" stroke="#759417" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.6427 5.00043H6.12271C5.78271 4.63043 5.79271 4.06043 6.15271 3.70043L7.57271 2.28043C7.94271 1.91043 8.55271 1.91043 8.92271 2.28043L11.6427 5.00043Z" stroke="#759417" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.8716 5.00043H12.3516L15.0716 2.28043C15.4416 1.91043 16.0516 1.91043 16.4216 2.28043L17.8416 3.70043C18.2016 4.06043 18.2116 4.63043 17.8716 5.00043Z" stroke="#759417" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.9375 10V15.14C8.9375 15.94 9.8175 16.41 10.4875 15.98L11.4275 15.36C11.7675 15.14 12.1975 15.14 12.5275 15.36L13.4175 15.96C14.0775 16.4 14.9675 15.93 14.9675 15.13V10H8.9375Z" stroke="#759417" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+               <span class="discount-msg__highlighted">Oferta limitada!</span> Tienes 30% de descuento para esta compra. 
+            </div>
+        </div>
+        <div class="timer">
+            <svg class="timer__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.7128 15.1798L12.6128 13.3298C12.0728 13.0098 11.6328 12.2398 11.6328 11.6098V7.50977" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="timer__time" id="discount-time">
+                <span class="timer-hours">00</span>:<span class="timer-minutes">00</span>:<span class="timer-seconds">00</span> 
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="dicount-timer.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.replya-to-review {
+  width: 100%;
+  padding: 12px;
+  background: #ECF3FB;
+  border-radius: 5px;
+}
+
+.replya-to-review__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+}
+
+.replya-to-review__date {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #828282;
+  margin-left: auto;
+  margin-right: 17px;
+}
+
+.replya-to-review__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #2A6071;
+}
+
+.replya-to-review__icon {
+  margin-right: 4px;
+  margin-top: auto;
+}
+
+.replya-to-review__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #2A6071;
+}

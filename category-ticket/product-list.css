@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.container {
+  max-width: 1324px;
+  margin: 0 auto;
+  min-height: 900px;
+  background-image: url("img/mixed-colours-abstract-4k-x5-3840x2400 1.png");
+  padding-top: 524px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+.products-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+  -webkit-transform: translate(0, 25px);
+          transform: translate(0, 25px);
+}
+
+.product-ticket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  min-width: 286px;
+  border-radius: 6px;
+  -webkit-filter: drop-shadow(0px 4px 43px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 4px 43px rgba(0, 0, 0, 0.2));
+}
+
+.product-ticket__header {
+  position: relative;
+  height: 44px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-ticket__header-icon {
+  margin-left: 7px;
+  margin-right: 10px;
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+
+.product-ticket__header-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.product-ticket__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.product-ticket__game-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 44px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 17px;
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.product-ticket__game-link:not(:last-child) {
+  border-bottom: 1px solid rgba(232, 232, 232, 0.4);
+}
+
+.product-ticket__game-link:hover {
+  background: #F5F5F5;
+}
+
+.product-ticket__game-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6C6C6C;
+}
+
+.product-ticket__items-quantity {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  color: #6C6C6C;
+}
+
+.product-ticket__view-more {
+  background: #2570ED;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FAFAFA;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 16px;
+  -webkit-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.product-ticket__view-more:hover {
+  background-color: #1A63DB;
+}
+
+.items {
+  color: #5F3174;
+}
+
+.items .product-ticket__header-bg {
+  background-image: url("img/items-bg.png");
+}
+
+.currency {
+  color: #2570ED;
+}
+
+.currency .product-ticket__header-bg {
+  background-image: url("img/currency-bg.png");
+}
+
+.coaching {
+  color: #F9B944;
+}
+
+.coaching .product-ticket__header-bg {
+  background-image: url("img/coaching-bg.png");
+}
+
+.accounts {
+  color: #16BD3B;
+}
+
+.accounts .product-ticket__header-bg {
+  background-image: url("img/accounts-bg.png");
+}
+
+@media (max-width: 1250px) {
+  .products-list {
+    max-width: 800px;
+  }
+}

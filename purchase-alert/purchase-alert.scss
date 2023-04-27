@@ -35,6 +35,10 @@
         height: 110px;
         object-fit: cover;
         margin-right: 20px;
+        background: #2570ED;
+        display: flex;
+        align-items: center;
+        justify-content: center;
      }
 	&__content { 
         max-width: 225px;
@@ -64,5 +68,6 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 18px;
-     }
+        color: #676767;
+     }  
 }

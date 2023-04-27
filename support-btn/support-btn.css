@@ -72,3 +72,16 @@
   overflow: inherit;
   padding: 11px 14px;
 }
+
+@media (max-width: 1023px) {
+  .support-btn {
+    bottom: 66px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .purchase-alert_show {
+    -webkit-transform: translate(calc(-0% + 16px), calc(-100% - 66px));
+            transform: translate(calc(-0% + 16px), calc(-100% - 66px));
+  }
+}

@@ -52,3 +52,15 @@
         }
     }
 }
+
+@media(max-width: 1023px){
+    .support-btn{
+        bottom: 66px;
+    }
+}
+
+@media(max-width: 1023px){
+    .purchase-alert_show {
+        transform: translate(calc(-0% + 16px), calc(-100% - 66px));
+    }
+}

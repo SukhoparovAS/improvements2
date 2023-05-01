@@ -1859,40 +1859,12 @@ body *{
   width: 154px;
   background-color: #F5F5F5;
   display: none;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 18px rgb(22 21 73 / 20%);
-  border-radius: 4px;
 }
-/* ////////////////////// */
-.menu_list > li{
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  transition: background-color 0.4s ease;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
 
-  text-transform: uppercase;
-
-  /* SGaming/black/primary */
-
-  color: #2B2E35;
-}
 .menu_list > li:hover > ul{
   display: block;
 }
-.menu_list > li:hover{
-  background: #F2F9FF;
-}
-.menu_list > .view-more{
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  color: #2570ED;
-}
-/* ////////////////////// */
+
 .menu_list li > ul > li > a{
   display: flex;
   align-items: center;
@@ -1906,28 +1878,12 @@ body *{
   text-decoration: none;
   box-sizing: border-box;
   padding: 0 20px 0 14px;
-  gap: 8px;
 }
 
 .menu_list li > ul > li{
   position: relative;
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  transition: background-color 0.4s ease;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-
-  text-transform: uppercase;
-
-  /* SGaming/black/primary */
-
-  color: #2B2E35;
 }
-.menu_list li > ul > li:hover{
-  background: #F2F9FF;
-}
+
 .menu_list li > ul > li.with_ul::after{
   content: '';
   position: absolute;
@@ -1948,13 +1904,10 @@ body *{
 .menu_list li > ul > li > ul{
   position: absolute;
   top: 0;
-  left: calc(100% + 6px) ;
+  left: 100%;
   width: 207px;
   background-color: #F5F5F5;
   display: none;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 18px rgba(22, 21, 73, 0.2);
-  border-radius: 4px;
 }
 
 .menu_list li > ul > li:hover > ul{

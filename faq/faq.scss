@@ -1,0 +1,106 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+.faq-wrapper{
+    max-width: 875px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.faq-title{
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+
+}
+.faq-list{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+.faq-details{
+    background: #F9FBFD;
+    border-radius: 6px;
+    width: 100%;
+    transition: background-color 0.4s ease;
+    cursor: pointer;
+    &:hover{
+        background: #ECF3FB;
+        .faq-details__content{
+            background: #ECF3FB;
+        }
+        .faq-details__arrow{
+            stroke: #4FA9EE;
+        }
+    }
+    &__arrow{
+        stroke: #828282;
+        transition: stroke 0.4s, transform 0.2s ease;
+    }
+    &[open]{
+        border-radius:  6px 6px 0px 0px;
+        .faq-details__content{
+            border-radius: 0px 0px 6px 6px;
+        }
+        .faq-details__arrow{
+            transform: rotate(90deg);
+        }
+    }
+    &__content-line{
+        width: 100%;
+        height: 2px;
+        background-color: #C5E5FE;
+        margin-bottom: 12px;
+    }
+    &__header{
+        padding:0 12px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 44px;
+    }
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #2570ED;
+    }
+    &__content{
+        background: #F9FBFD;
+        transition: background-color 0.4s ease;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2B2E35;
+        min-width: 100%;
+        border-radius: 6px;
+        padding: 12px;
+        padding-top: 0;
+    }
+}

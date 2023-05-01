@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pay-visa-popup.css">
+    <title>Document</title>
+</head>
+
+<body style="font-family: 'Montserrat'">
+    <div class="visa-popup-wrapper">
+        <div class="visa-popup">
+            <div class="visa-popup__header">
+                <div class="visa-popup__title">Compra rapida</div>
+                <button class="visa-popup__close-btn">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7 8.82753L12.6725 14.5L14 13.1725L8.32752 7.5L14 1.82752L12.6725 0.5L7 6.17248L1.32752 0.5L0 1.82753L5.67248 7.5L0 13.1725L1.32752 14.5L7 8.82753Z"
+                            fill="#010101" />
+                    </svg>
+                </button>
+            </div>
+            <div class="visa-popup__top">
+                <div class="visa-popup__products-info">
+                    <div class="visa-popup__product-name">Suscripción Standart Netflix 1 año <span
+                            class="visa-popup__products-quantity"></span></div>
+                    <div class="visa-popup__product-price">USD 28.00</div>
+                </div>
+                <div class="visa-popup__discount-info">
+                    <div class="visa-popup__discount-title">Coupon Code</div>
+                    <div class="visa-popup__amount-of-discount">- USD 3.00</div>
+                </div>
+                <div class="visa-popup__total-info">
+                    <div class="visa-popup__total-title">
+                        Total
+                    </div>
+                    <div class="visa-popup__total-sum">USD 25.00</div>
+                </div>
+            </div>
+            <div class="visa-popup__line"></div>
+            <div class="visa-popup__personal-information">
+                <div class="visa-popup__input-wrapper">
+                    <label for="email">E-mail</label>
+                    <input class="visa-popup__input visa-popup__input_error" type="email" id="email"
+                        placeholder="E-mail for delivery">
+                    <div class="visa-popup__input-error">Error</div>
+                </div>
+                <div class="visa-popup__grid-2-col">
+                    <div class="visa-popup__input-wrapper">
+                        <label for="first-name">First Name</label>
+                        <input class="visa-popup__input" type="text" id="first-name" placeholder="Your First Name">
+                        <div class="visa-popup__input-error">Error</div>
+                    </div>
+                    <div class="visa-popup__input-wrapper">
+                        <label for="last-name">Last Name</label>
+                        <input class="visa-popup__input" type="text" id="last-name" placeholder="Your Last Name">
+                        <div class="visa-popup__input-error">Error</div>
+                    </div>
+                </div>
+            </div>
+            <div class="visa-popup__line"></div>
+            <div class="visa-popup__promo-block visa-popup__grid-2-col">
+                <div class="visa-popup__flex-container">
+                    <div class="visa-popup__input-wrapper">
+                        <label for="cupon-code">Coupon Code</label>
+                        <input class="visa-popup__input" type="text" id="cupon-cod" placeholder="Coupon code">
+                        <div class="visa-popup__input-error">Error</div>
+                    </div>
+                    <button type="button" class="visa-popup__apply-btn">Apply</button>
+                </div>
+                <div class="visa-popup__flex-container">
+                    <div class="visa-popup__input-wrapper">
+                        <label for="gift-card">Gift Card</label>
+                        <input class="visa-popup__input" type="text" id="gift-card" placeholder="Gift card">
+                        <div class="visa-popup__input-error">Error</div>
+                    </div>
+                    <button type="button" class="visa-popup__apply-btn">Apply</button>
+                </div>
+            </div>
+            <div class="visa-popup__line"></div>
+            <div class="visa-popup__flex-container visa-popup__adaptive-flex">
+                <div class="visa-popup__input-wrapper">
+                    <label for="card-Number">Card Number</label>
+                    <input class="visa-popup__input" type="number" id="card-Number" placeholder="0000 0000 0000 0000">
+                    <div class="visa-popup__input-error">Error</div>
+                </div>
+                <div class="visa-popup__input-wrapper">
+                    <label for="date">Expiry Date</label>
+                    <input class="visa-popup__input" type="text" id="date" placeholder="MM / YY">
+                    <div class="visa-popup__input-error">Error</div>
+                </div>
+                <div class="visa-popup__input-wrapper">
+                    <label for="cvc">Card Code (CVC)</label>
+                    <input class="visa-popup__input" type="number" id="cvc" placeholder="CVC">
+                    <div class="visa-popup__input-error">Error</div>
+                </div>
+            </div>
+            <button class="visa-popup__pay-btn" type="button">
+                Pay by
+                <svg width="108" height="28" viewBox="0 0 108 28" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-1434CB" d="M25.7669 22.2543H21.2305L24.0679 5.79785H28.604L25.7669 22.2543Z"
+                        fill="inherit" />
+                    <path class="fill-1434CB"
+                        d="M42.2114 6.20062C41.3167 5.86764 39.8975 5.5 38.1427 5.5C33.6628 5.5 30.5082 7.74076 30.4888 10.9444C30.4516 13.308 32.7475 14.6208 34.4646 15.4089C36.2196 16.2142 36.8162 16.7399 36.8162 17.4577C36.7984 18.5602 35.398 19.0684 34.092 19.0684C32.2808 19.0684 31.3104 18.8064 29.8357 18.193L29.2383 17.9301L28.6035 21.6242C29.6675 22.0788 31.6277 22.4823 33.6628 22.5C38.4227 22.5 41.5216 20.2939 41.5583 16.88C41.5764 15.0066 40.3641 13.5712 37.7505 12.3982C36.1638 11.6452 35.1922 11.1375 35.1922 10.3671C35.2108 9.6667 36.014 8.94933 37.805 8.94933C39.2798 8.91419 40.3633 9.2467 41.1842 9.57944L41.5945 9.75419L42.2114 6.20062Z"
+                        fill="inherit" />
+                    <path class="fill-1434CB"
+                        d="M48.2412 16.4244C48.6148 15.479 50.0523 11.82 50.0523 11.82C50.0335 11.8551 50.4252 10.8571 50.6492 10.2445L50.9662 11.6625C50.9662 11.6625 51.8253 15.6016 52.0118 16.4244C51.3028 16.4244 49.1372 16.4244 48.2412 16.4244ZM53.8408 5.79785H50.3319C49.2498 5.79785 48.4277 6.09522 47.9609 7.16325L41.2227 22.2541H45.9826C45.9826 22.2541 46.7662 20.223 46.9346 19.7855C47.4568 19.7855 52.0872 19.7855 52.759 19.7855C52.8892 20.3633 53.3003 22.2541 53.3003 22.2541H57.5005L53.8408 5.79785Z"
+                        fill="inherit" />
+                    <path class="fill-1434CB"
+                        d="M17.4421 5.79785L12.9995 17.0196L12.5141 14.7437C11.6927 12.1176 9.11678 9.2644 6.24219 7.84572L10.3115 22.2368H15.1086L22.239 5.79785H17.4421Z"
+                        fill="inherit" />
+                    <path class="fill-1434CB"
+                        d="M8.87328 5.79785H1.57467L1.5 6.13036C7.19337 7.49599 10.964 10.7878 12.5132 14.7444L10.9265 7.18117C10.6653 6.13013 9.86257 5.83252 8.87328 5.79785Z"
+                        fill="inherit" />
+                    <path class="stroke-F79E1B" d="M65.5 5L65.5 23" stroke="inherit" />
+                    <path class="fill-F79E1B"
+                        d="M95.9935 3.5C93.8402 3.5 91.8412 4.14567 90.1781 5.25295C90.2631 5.32516 90.3481 5.39171 90.4118 5.46534C92.8995 7.61334 94.3232 10.727 94.3232 14.0007C94.3232 17.2716 92.9052 20.3824 90.4302 22.5403C90.3481 22.6097 90.2602 22.6791 90.1738 22.747C91.8412 23.8557 93.8402 24.5 95.9921 24.5C101.796 24.5014 106.499 19.8004 106.499 14.0007C106.499 8.2038 101.796 3.5 95.9935 3.5Z"
+                        fill="inherit" />
+                    <path class="fill-FF5F00"
+                        d="M89.5008 5.75098C89.3648 5.85717 89.2331 5.96337 89.1042 6.07806C86.8885 8.00234 85.4902 10.8357 85.4902 14.0003C85.4902 17.1664 86.8885 19.9983 89.1042 21.9226C89.2317 22.0359 89.3662 22.1463 89.5008 22.2511C89.6368 22.1463 89.7686 22.0359 89.8975 21.9226C92.1117 19.9983 93.5114 17.1664 93.5114 14.0003C93.5114 10.8357 92.1132 8.00234 89.8975 6.07806C89.77 5.96479 89.6368 5.85717 89.5008 5.75098Z"
+                        fill="inherit" />
+                    <path class="fill-EB001B"
+                        d="M88.5693 22.5403C88.6514 22.6097 88.7393 22.6791 88.8257 22.747C87.1582 23.8557 85.1565 24.5 83.0074 24.5C77.2033 24.5014 72.5 19.8004 72.5 14.0007C72.5 8.20238 77.2033 3.5 83.006 3.5C85.1565 3.5 87.1582 4.14567 88.8214 5.25295C88.7364 5.32516 88.6514 5.39171 88.5877 5.46534C86.1 7.61334 84.6763 10.727 84.6763 14.0007C84.6763 17.273 86.0943 20.3867 88.5693 22.5403Z"
+                        fill="inherit" />
+                </svg>
+            </button>
+        </div>
+
+    </div>
+</body>
+
+</html>

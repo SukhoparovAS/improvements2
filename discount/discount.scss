@@ -81,6 +81,7 @@
         }
     }
     &_activate{
+        border-radius: 0;
         min-width: 100%;
         max-width: 100%;
         justify-content: center;
@@ -111,8 +112,7 @@
         }
     }
 }
-.timer{
-    font-family: 'Montserrat';
+.discount-push-timer{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -132,7 +132,7 @@
     .discount-push {
         transform: translate(-50%, calc(-42px - 16px));
         &_activate{
-            transform: translate(-50%, -42px);
+            transform: translate(-50%, -52px);
         }
     }
 }

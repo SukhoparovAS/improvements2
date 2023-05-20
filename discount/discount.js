@@ -1,6 +1,6 @@
 const discountPush = $('.discount-push')
 const activateBtn = discountPush.find('.discount-push__btn')
-const timer = $('.timer')
+const timer = $('.discount-push-timer')
 const discountText = $('.discount-push__text')
 
 const startTime = 10 //время обратного отсчета в время в часах

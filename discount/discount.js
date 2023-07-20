@@ -2,7 +2,7 @@ const discountPush = $('.discount-push')
 const activateBtn = discountPush.find('.discount-push__btn')
 const timer2 = $('.discount-push-timer')
 const discountText = $('.discount-push__text')
-
+discountPush.removeClass('hidden')
 let startTime = 10 * 60 * 60 //время обратного отсчета в время в секундах
 let activateTime = Cookies.get('saler_timer');
 let serverTime = document.getElementById("server_time").innerHTML;
@@ -11,8 +11,7 @@ if (activateTime){
     startTime  = startTime -  (serverTime - activateTime)
 }
 
-// Устанавливаем время обратного отсчета в микросекундах 
-var countDownDate = new Date().getTime() + (startTime * 1000);
+
 
 function startTimer1() {
     var x = setInterval(function () {
@@ -45,8 +44,23 @@ function activateDiscount() {
     timer2.removeClass('hidden')
     startTimer1()
 }
+/* function diactivateDiscount(){
+    discountPush.removeClass('discount-push_activate')
+    discountText.text('discount')
+    timer2.addClass('hidden')
+} */
 
-if (activateTime){
+// Устанавливаем время обратного отсчета в микросекундах 
+var countDownDate = new Date().getTime() + (startTime * 1000);
+if (activateTime && startTime > 0){
+    countDownDate = new Date().getTime() + (startTime * 1000);
     activateDiscount()
+} else {
+    startTime = 10 * 60 * 60
+    countDownDate = new Date().getTime() + (startTime * 1000);
 }
-activateBtn.click(activateDiscount)
+
+activateBtn.click(()=>{
+    activateDiscount()
+    //твоя функция
+})
